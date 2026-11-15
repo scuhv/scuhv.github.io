@@ -3430,6 +3430,21 @@ html.zoom-open body {
   border: 1px solid var(--pm-line);
 }
 
+/* 没有照片的成员：姓名首字占位（与团队页 placeholder 一致） */
+.phead__photo--ph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 176px;
+  height: 208px;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+  background: var(--chip-self);
+  border: 1px solid var(--pm-line);
+}
+
 .phead__info {
   flex: 1;
   min-width: 0;

@@ -7,6 +7,7 @@
 !/*.html
 !/.nojekyll
 !/assets/
+!/profile/
 !/.gitignore
 
 # 站点可能用到的其它静态文件（有则上传，没有不影响）

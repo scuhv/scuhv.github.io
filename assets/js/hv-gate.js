@@ -10,8 +10,22 @@
 
   var CFG = global.HV_GATE || {};
   var STORE_KEY = "hvlab_gate";
-  var LOGIN_PAGE = "login.html";
   var DAY = 24 * 60 * 60;
+
+  /* 站点根目录：由本脚本地址（…/assets/js/hv-gate.js）反推，
+     这样放在子目录里的页面（如 profile/xxx.html）也能正确跳回根目录的 login.html。
+     同步脚本执行时 document.currentScript 有效，必须在这里先缓存下来。 */
+  var SITE_ROOT = (function () {
+    try {
+      var src = (document.currentScript && document.currentScript.src) || "";
+      src = src.split("?")[0].split("#")[0];
+      var at = src.lastIndexOf("assets/js/hv-gate.js");
+      return at >= 0 ? src.slice(0, at) : "";
+    } catch (e) {
+      return "";
+    }
+  })();
+  var LOGIN_PAGE = SITE_ROOT + "login.html";
 
   function accounts() {
     if (CFG.accounts && CFG.accounts.length) return CFG.accounts;
@@ -88,6 +102,12 @@
   }
 
   function currentPage() {
+    // 返回相对站点根的路径（可能带子目录，如 profile/profile-1a2b3c4d.html）
+    var here = "";
+    try { here = String(global.location.href).split("?")[0].split("#")[0]; } catch (e) { here = ""; }
+    if (here && SITE_ROOT && here.indexOf(SITE_ROOT) === 0) {
+      return here.slice(SITE_ROOT.length) || "index.html";
+    }
     var name = "";
     try { name = global.location.pathname.split("/").pop() || ""; } catch (e) { name = ""; }
     if (!name) name = "index.html";
@@ -109,7 +129,8 @@
       }
     }
     value = value.split("#")[0].split("?")[0];
-    if (/^[A-Za-z0-9._-]+\.html$/.test(value)) return value;
+    // 允许 profile/xxx.html 这种子目录页面，但不允许跳出站点（..）
+    if (/^[A-Za-z0-9._\/-]+\.html$/.test(value) && value.indexOf("..") === -1) return value;
     return "index.html";
   }
 
