@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HV Lab · Blogs</title>
+<meta name="description" content="课题组随笔：方法笔记、工具踩坑与研究思考。">
+<meta name="robots" content="noindex,nofollow">
+<script src="assets/js/hv-gate-config.js?v=8a95ed1c"></script>
+<script src="assets/js/hv-gate.js?v=1794729898"></script>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css?v=1794729898">
+<style>
+/* 后台「作者加粗名单」里自定义的字体颜色（论文 / 专利） */
+.pub__authors strong,
+.pub__authors .au--self,
+.patent__authors strong {
+  color: #a72bbf;
+}
+</style>
+</head>
+<body>
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (e) {}
+  })();
+</script>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="index.html"><img class="brand__mark brand__mark--img" src="assets/img/brand-mark.svg" alt="HV Lab">HV Lab</a>
+    <nav class="topnav" aria-label="主导航">
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="projects.html">Projects</a>
+      <a href="resources.html">Resources</a>
+      <a href="blogs.html" class="is-active">Blogs</a>
+      <a href="join.html">Join Us</a>
+    </nav>
+    <button class="theme" id="themeToggle" type="button" aria-label="切换深浅色模式" title="切换深浅色模式">
+      <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"></path></svg>
+    </button>
+  </div>
+</header>
+
+<div class="layout layout--single">
+
+  <!-- ================= 侧边栏 ================= -->
+
+  <!-- ================= 正文 ================= -->
+  <main class="main">
+    <p class="page-head__desc page-head__desc--lead">读书笔记、方法复现与环境配置的零散记录，写给自己也给后来的人。</p>
+
+
+
+    <article class="post">
+      <span class="post__date">2026-11-06</span>
+      <div class="post__body">
+        <h2 class="post__title">光谱、质谱、色谱、波谱</h2>
+        <p class="post__note">红外光谱是通过测量物质对红外光的吸收或透过特性来分析物质结构的一种方法。当红外光照射物质时，物质会吸收某些特定波长的红外光，这种吸收与物质内部的化学键振动有关，因此可以用于分析物质的结构和化学键类型。
+
+红外色谱，又称为红外吸收光谱色谱法，是一种结合了色谱分离技术和红外光谱检测的方法。它主要用于复杂混合物中各成分的分离与鉴定，通过色谱柱将混合物中的不同成分分离开来，再利用红外光谱对每个成分进行定性和定量分析。</p>
+      </div>
+    </article>
+
+
+
+    <footer class="foot">
+      <span>© <span class="js-year">2026</span> Zhou kai · 保留所有权利</span>
+      <span><a href="index.html">返回主页</a> · <a href="login.html?logout=1">退出登录</a></span>
+    </footer>
+
+  </main>
+</div>
+
+<script src="assets/js/main.js?v=1794729898"></script>
+</body>
+</html>

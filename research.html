@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HV Lab · Research</title>
+<meta name="description" content="研究方向：方向1. 电力设备状态监测与故障诊断、方向2. 透明地下电缆系统(TUCS)、方向3. 高压电缆逸出气体的三域指纹特征及状态诊断。">
+<meta name="robots" content="noindex,nofollow">
+<script src="assets/js/hv-gate-config.js?v=8a95ed1c"></script>
+<script src="assets/js/hv-gate.js?v=1794729898"></script>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css?v=1794729898">
+<style>
+/* 后台「作者加粗名单」里自定义的字体颜色（论文 / 专利） */
+.pub__authors strong,
+.pub__authors .au--self,
+.patent__authors strong {
+  color: #a72bbf;
+}
+</style>
+</head>
+<body>
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (e) {}
+  })();
+</script>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="index.html"><img class="brand__mark brand__mark--img" src="assets/img/brand-mark.svg" alt="HV Lab">HV Lab</a>
+    <nav class="topnav" aria-label="主导航">
+      <a href="research.html" class="is-active">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="projects.html">Projects</a>
+      <a href="resources.html">Resources</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="join.html">Join Us</a>
+    </nav>
+    <button class="theme" id="themeToggle" type="button" aria-label="切换深浅色模式" title="切换深浅色模式">
+      <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"></path></svg>
+    </button>
+  </div>
+</header>
+
+<div class="layout layout--single">
+
+  <!-- ================= 侧边栏 ================= -->
+
+  <!-- ================= 正文 ================= -->
+  <main class="main">
+    <header class="page-head">
+      <h1>Research</h1>
+      <p class="page-head__desc">---Research Direction---</p>
+    </header>
+
+    <div class="prose prose--wide">
+      <section class="rdir" id="dir1">
+        <h2 style="color:#2f6bde;font-size:18px">方向1. 电力设备状态监测与故障诊断</h2>
+        <div class="rdir__body">
+          <div class="rdir__text">
+            <p>本团队聚焦电力设备状态监测与故障诊断，围绕变压器、GIS、电缆及断路器等核心设备，构建“多源感知-特征提取-智能诊断-寿命预测”的完整技术链条。研究涵盖振动声纹、红外热像、局部放电及油中溶解气体等多模态信号的融合分析，重点发展基于深度学习与物理机理混合驱动的故障识别模型，攻克小样本、强噪声环境下微弱故障特征提取与早期预警难题。同时，团队探索数字孪生与边缘计算架构在状态评估中的工程落地，致力于实现从被动检修向预测性维护的范式转变，为新型电力系统下设备安全稳定运行提供理论支撑与技术手段。</p>
+          </div>
+          <figure class="rdir__img">
+            <img src="assets/img/research/3ddb250a.png" alt="方向1. 电力设备状态监测与故障诊断" loading="lazy" data-zoom title="点击查看大图">
+          </figure>
+        </div>
+      </section>
+      <section class="rdir" id="dir2">
+        <h2 style="color:#2f6bde;font-size:18px">方向2. 透明地下电缆系统(TUCS)</h2>
+        <div class="rdir__body">
+          <div class="rdir__text">
+            <p>透明地下电缆系统(TUCS)是由我们团队率先提出的新一代地下电缆系全息感知体系。将原本“看不见、摸不着、难定位、难评估”的地下中低压电缆网络，转化为可感知、可定位、可诊断、可预警的“透明化”数字资产。目标：实现地下电缆从“黑箱运行”向“可视、可判、可预、可控”的转变。</p>
+          </div>
+          <figure class="rdir__img">
+            <img src="assets/img/research/087a93f7.png" alt="方向2. 透明地下电缆系统(TUCS)" loading="lazy" data-zoom title="点击查看大图">
+          </figure>
+        </div>
+      </section>
+      <section class="rdir" id="dir3">
+        <h2 style="color:#2f6bde;font-size:18px">方向3. 高压电缆逸出气体的三域指纹特征及状态诊断</h2>
+        <div class="rdir__body">
+          <div class="rdir__text">
+            <p>针对受潮腐蚀、材料热降解和放电等过程的产气特征相互重叠、单一气体浓度难以判别异常来源的问题，团队基于116条电缆本体现场测试记录，利用梯度提升决策树分析各气体浓度及浓度比对状态分类的贡献，并结合产气机理构建氢气浓度域（C域）、热产气组成域（T域）和放电相关信号域（D域）。该方法联合分析七种逸出气体，输出三域编码、综合警示等级及具体触发条件。对4条线路的10条典型记录复算表明，相同警示等级可对应不同的气体特征和触发条件。通过保留这些差异，三域指纹可为电缆状态评估、现场复测和专项检查提供可追溯的依据。</p>
+          </div>
+          <figure class="rdir__img">
+            <img src="assets/img/research/12411cab.png" alt="方向3. 高压电缆逸出气体的三域指纹特征及状态诊断" loading="lazy" data-zoom title="点击查看大图">
+          </figure>
+        </div>
+      </section>
+    </div>
+
+    <footer class="foot">
+      <span>© <span class="js-year">2026</span> Zhou kai · 保留所有权利</span>
+      <span><a href="index.html">返回主页</a> · <a href="login.html?logout=1">退出登录</a></span>
+    </footer>
+
+  </main>
+</div>
+
+<script src="assets/js/main.js?v=1794729898"></script>
+</body>
+</html>

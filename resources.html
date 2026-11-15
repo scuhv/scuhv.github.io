@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HV Lab · Resources</title>
+<meta name="description" content="常用资源：学术检索、课题组资料、行人重识别数据集与工具框架。">
+<meta name="robots" content="noindex,nofollow">
+<script src="assets/js/hv-gate-config.js?v=8a95ed1c"></script>
+<script src="assets/js/hv-gate.js?v=1794729898"></script>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css?v=1794729898">
+<style>
+/* 后台「作者加粗名单」里自定义的字体颜色（论文 / 专利） */
+.pub__authors strong,
+.pub__authors .au--self,
+.patent__authors strong {
+  color: #a72bbf;
+}
+</style>
+</head>
+<body class="page-resources">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (e) {}
+  })();
+</script>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="index.html"><img class="brand__mark brand__mark--img" src="assets/img/brand-mark.svg" alt="HV Lab">HV Lab</a>
+    <nav class="topnav" aria-label="主导航">
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="projects.html">Projects</a>
+      <a href="resources.html" class="is-active">Resources</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="join.html">Join Us</a>
+    </nav>
+    <button class="theme" id="themeToggle" type="button" aria-label="切换深浅色模式" title="切换深浅色模式">
+      <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"></path></svg>
+    </button>
+  </div>
+</header>
+
+<div class="layout layout--single">
+
+  <!-- ================= 侧边栏 ================= -->
+
+  <!-- ================= 正文 ================= -->
+  <main class="main">
+
+<div class="res-layout">
+
+  <nav class="resnav" aria-label="资源分类">
+    <a class="resnav__link is-active" href="#445a4ace">
+      <span class="resnav__ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+      </span>
+      <span class="resnav__txt">公司平台（Company Platform）</span>
+    </a>
+  </nav>
+
+  <div class="res-main">
+    
+    <section class="res-group" id="445a4ace">
+      <h2>公司平台（Company Platform）<span class="res-group__num">4</span></h2>
+      <div class="res-list">
+        <a class="res" href="https://www.cabledoctor.com.cn/" target="_blank" rel="noopener">
+          <img class="res__icon res__icon--img" src="assets/img/logos/kaibote.png" alt="" loading="lazy">
+          <span class="res__body">
+            <span class="res__name">四川凯博特电力科技有限公司</span>
+            <span class="res__desc">四川凯博特电力科技有限公司</span>
+          </span>
+        </a>
+        <a class="res" href="http://47.120.37.166:9001" target="_blank" rel="noopener">
+          <span class="res__icon" aria-hidden="true">宽</span>
+          <span class="res__body">
+            <span class="res__name">宽频抗阻数据分析</span>
+            <span class="res__desc">宽频抗阻数据分析云平台</span>
+          </span>
+        </a>
+        <a class="res" href="http://47.120.37.166:9004" target="_blank" rel="noopener">
+          <span class="res__icon" aria-hidden="true">逸</span>
+          <span class="res__body">
+            <span class="res__name">逸出气体分析</span>
+            <span class="res__desc">逸出气体分析的电缆状态监测平台</span>
+          </span>
+        </a>
+        <a class="res" href="https://github.com/liuq408/TDF-EGA" target="_blank" rel="noopener">
+          <span class="res__icon" aria-hidden="true">T</span>
+          <span class="res__body">
+            <span class="res__name">TDF-EGA</span>
+            <span class="res__desc">基于三域指纹特征的逸出气体分析</span>
+          </span>
+        </a>
+      </div>
+    </section>
+    
+  </div>
+
+</div>
+
+    <footer class="foot">
+      <span>© <span class="js-year">2026</span> Zhou kai · 保留所有权利</span>
+      <span><a href="index.html">返回主页</a> · <a href="login.html?logout=1">退出登录</a></span>
+    </footer>
+
+  </main>
+</div>
+
+<script src="assets/js/main.js?v=1794729898"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HV Lab · Books</title>
+<meta name="description" content="教材与专著列表。">
+<meta name="robots" content="noindex,nofollow">
+<script src="assets/js/hv-gate-config.js?v=8a95ed1c"></script>
+<script src="assets/js/hv-gate.js?v=1794729898"></script>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css?v=1794729898">
+<style>
+/* 后台「作者加粗名单」里自定义的字体颜色（论文 / 专利） */
+.pub__authors strong,
+.pub__authors .au--self,
+.patent__authors strong {
+  color: #a72bbf;
+}
+</style>
+</head>
+<body class="page-pubs">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (e) {}
+  })();
+</script>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="index.html"><img class="brand__mark brand__mark--img" src="assets/img/brand-mark.svg" alt="HV Lab">HV Lab</a>
+    <nav class="topnav" aria-label="主导航">
+      <a href="research.html">Research</a>
+      <a href="publications.html" class="is-active">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="projects.html">Projects</a>
+      <a href="resources.html">Resources</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="join.html">Join Us</a>
+    </nav>
+    <button class="theme" id="themeToggle" type="button" aria-label="切换深浅色模式" title="切换深浅色模式">
+      <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"></path></svg>
+    </button>
+  </div>
+</header>
+
+<div class="layout layout--single">
+
+  <!-- ================= 侧边栏 ================= -->
+
+  <!-- ================= 正文 ================= -->
+  <main class="main">
+
+    <div class="tabs">
+      <a href="publications.html">论文发表(402篇)</a>
+      <a href="patents.html">发明专利(64篇)</a>
+      <a href="books.html" class="is-active">教材与专著(2部)</a>
+    </div>
+
+    <!-- 筛选 -->
+    <div class="toolbar">
+      <input class="search" id="bookSearch" type="search" placeholder="搜索书名、作者或出版社…" aria-label="搜索教材与专著">
+    </div>
+
+    <p class="empty" id="bookEmpty" hidden>没有找到匹配的教材与专著，请尝试其他关键词。</p>
+
+
+    <!-- ============ 教材与专著 ============ -->
+    <section class="pub-year" id="books">
+      <h2 class="pub-year__title">教材与专著<span class="count">2 部</span></h2>
+      <div class="pub-list">
+
+        <article class="book">
+          <div class="book__cover">
+            
+            <img src="assets/img/books/28d9dd94.png" alt="配电电缆绝缘状态监测技术理论与实践 封面" data-zoom>
+            
+          </div>
+          <div class="book__body">
+            <h3 class="book__title">
+              <button class="book__title-btn" type="button" data-book-dialog="book-28d9dd94" title="查看出版信息">配电电缆绝缘状态监测技术理论与实践</button>
+              <span class="badge badge--grade">教材</span>
+              <span class="book__more">点击书名查看出版信息</span>
+            </h3>
+            
+            <p class="book__line"><span class="book__k">作者</span><span class="book__v">主编：周凯</span></p>
+            
+            
+            <p class="book__line"><span class="book__k">出版社</span><span class="book__v">中国电力出版社</span></p>
+            
+            
+            <p class="book__line"><span class="book__k">ISBN</span><span class="book__v">9787523901335</span></p>
+            
+            
+            <p class="book__line"><span class="book__k">出版时间</span><span class="book__v">2026-01-01</span></p>
+            
+            
+          </div>
+        </article>
+
+        <dialog class="book-dialog" id="book-28d9dd94" aria-label="配电电缆绝缘状态监测技术理论与实践 出版信息">
+          <form method="dialog" class="book-dialog__close-form">
+            <button class="book-dialog__close" type="submit" aria-label="关闭">×</button>
+          </form>
+          <h4 class="book-dialog__title">配电电缆绝缘状态监测技术理论与实践</h4>
+          
+          <p class="book-dialog__row"><span class="book-dialog__k">作者</span><span class="book-dialog__v">主编：周凯</span></p>
+          
+          
+          <p class="book-dialog__row"><span class="book-dialog__k">出版社</span><span class="book-dialog__v">中国电力出版社</span></p>
+          
+          
+          <p class="book-dialog__row"><span class="book-dialog__k">ISBN</span><span class="book-dialog__v">9787523901335</span></p>
+          
+          
+          <p class="book-dialog__row"><span class="book-dialog__k">出版时间</span><span class="book-dialog__v">2026-01-01</span></p>
+          
+          
+          <p class="book-dialog__row"><span class="book-dialog__k">出版信息</span><span class="book-dialog__v">本书为国家电网公司电力科技著作出版项目，是基于国家自然科学基金项目及多个横向科学技术项目的研究成果及现场应用案例编撰而成。本书系统阐述了配电电缆在运行条件下的老化机理及绝缘状态诊断、缺陷定位与修复技术，相关成果已在多家单位进行了广泛的工程应用，取得了显著成效。  全书共十章，内容涵盖了配电电缆绝缘状态监测技术领域的近期新研究理论与工程实践知识，主要内容包括配电电缆概述、电缆及其附件的基本原理与结构、电缆本体及附件的常见缺陷、电缆状态诊断方法及现场应用案例、缺陷定位技术及其现场应用案例、修复技术及其现场应用案例等。书中不仅详细阐述了绝缘状态监测的理论知识，还结合了大量的现场测试案例，理论与实践相结合，深入浅出地呈现了配电电缆绝缘状态监测技术的近期新研究成果与实际应用经验。</span></p>
+          
+          
+          <p class="book-dialog__hint">点击窗口外或按 Esc 关闭</p>
+        </dialog>
+
+        <article class="book">
+          <div class="book__cover">
+            
+            <img src="assets/img/books/16234fa3.png" alt="中高压电缆系统老化诊断及修复 封面" data-zoom>
+            
+          </div>
+          <div class="book__body">
+            <h3 class="book__title">
+              <button class="book__title-btn" type="button" data-book-dialog="book-16234fa3" title="查看出版信息">中高压电缆系统老化诊断及修复</button>
+              <span class="badge badge--grade">教材</span>
+              <span class="book__more">点击书名查看出版信息</span>
+            </h3>
+            
+            <p class="book__line"><span class="book__k">作者</span><span class="book__v">作者: 周凯；李康乐；龚薇</span></p>
+            
+            
+            <p class="book__line"><span class="book__k">出版社</span><span class="book__v">科学出版社</span></p>
+            
+            
+            <p class="book__line"><span class="book__k">ISBN</span><span class="book__v">9787030572202</span></p>
+            
+            
+            <p class="book__line"><span class="book__k">出版时间</span><span class="book__v">2018-10-01</span></p>
+            
+            
+          </div>
+        </article>
+
+        <dialog class="book-dialog" id="book-16234fa3" aria-label="中高压电缆系统老化诊断及修复 出版信息">
+          <form method="dialog" class="book-dialog__close-form">
+            <button class="book-dialog__close" type="submit" aria-label="关闭">×</button>
+          </form>
+          <h4 class="book-dialog__title">中高压电缆系统老化诊断及修复</h4>
+          
+          <p class="book-dialog__row"><span class="book-dialog__k">作者</span><span class="book-dialog__v">作者: 周凯；李康乐；龚薇</span></p>
+          
+          
+          <p class="book-dialog__row"><span class="book-dialog__k">出版社</span><span class="book-dialog__v">科学出版社</span></p>
+          
+          
+          <p class="book-dialog__row"><span class="book-dialog__k">ISBN</span><span class="book-dialog__v">9787030572202</span></p>
+          
+          
+          <p class="book-dialog__row"><span class="book-dialog__k">出版时间</span><span class="book-dialog__v">2018-10-01</span></p>
+          
+          
+          <p class="book-dialog__row"><span class="book-dialog__k">出版信息</span><span class="book-dialog__v">电气工程专业中电力系统、高电压技术方面的学生电力系统中高压电缆线路设计、运行和维护人员电缆及附件制造、设计和测试工程师随着中国城市化的发展，交联聚乙烯（XLPE）电缆在城市电网中得到广泛应用。然而在长期运行过程中，在电缆线路中不可避免会引发诸如水树、电树、热老化或者局部放电等绝缘劣化现象，导致电缆运行可靠性下降，进而对电缆系统的安全稳定运行产生不利影响。本书主要介绍了电缆及附件的绝缘老化理论和老化规律，绝缘老化的诊断方法，以及电缆的修复技术及工程应用。总体来说，认识电缆绝缘中的老化现象及发展规律，有效诊断电缆的绝缘状态并采取相应的修复技术以恢复绝缘水平，对于提高配电网的安全稳定运行具有重要的理论和工程价值</span></p>
+          
+          
+          <p class="book-dialog__hint">点击窗口外或按 Esc 关闭</p>
+        </dialog>
+
+      </div>
+    </section>
+
+
+    <footer class="foot">
+      <span>© <span class="js-year">2026</span> Zhou kai · 保留所有权利</span>
+      <span><a href="index.html">返回主页</a> · <a href="login.html?logout=1">退出登录</a></span>
+    </footer>
+
+  </main>
+</div>
+
+<script src="assets/js/main.js?v=1794729898"></script>
+</body>
+</html>

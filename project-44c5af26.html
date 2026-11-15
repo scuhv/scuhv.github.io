@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VCTI Lab · Alzheimer’s disease (AD)</title>
+<meta name="description" content="Alzheimer&#39;s disease (AD) is a progressive, irreversible brain disorder that slowly destroys memory, thinking skills, and">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css?v=1794729898">
+<style>
+/* 后台「作者加粗名单」里自定义的字体颜色（论文 / 专利） */
+.pub__authors strong,
+.pub__authors .au--self,
+.patent__authors strong {
+  color: #bf2bb3;
+}
+</style>
+</head>
+<body class="page-project">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (e) {}
+  })();
+</script>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="index.html"><span class="brand__mark">V</span>VCTI Lab</a>
+    <nav class="topnav" aria-label="主导航">
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="team.html">Team</a>
+      <a href="projects.html" class="is-active">Projects</a>
+      <a href="resources.html">Resources</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="join.html">Join Us</a>
+    </nav>
+    <button class="theme" id="themeToggle" type="button" aria-label="切换深浅色模式" title="切换深浅色模式">
+      <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"></path></svg>
+    </button>
+  </div>
+</header>
+
+<div class="layout layout--single">
+
+  <!-- ================= 侧边栏 ================= -->
+
+  <!-- ================= 正文 ================= -->
+  <main class="main">
+    <nav class="proj-tabs" aria-label="项目分类">
+      <a class="proj-tab is-on" href="projects.html#algo" data-tab="algo" aria-current="page">算法研究<em>Algorithms</em></a>
+      <a class="proj-tab" href="projects.html#hardware" data-tab="hardware">硬件开发<em>Hardware</em></a>
+      <a class="proj-tab" href="projects.html#oss" data-tab="oss">开源项目<em>Open Source</em></a>
+    </nav>
+    <header class="page-head">
+      <h1>Alzheimer’s disease (AD)</h1>
+    </header>
+
+
+    <figure class="proj-figure">
+      <img src="assets/img/projects/44c5af26.png" alt="Alzheimer’s disease (AD)" data-zoom title="点击查看大图">
+    </figure>
+    <div class="proj-lead"><p>Alzheimer's disease (AD) is a progressive, irreversible brain disorder that slowly destroys memory, thinking skills, and eventually the ability to carry out the simplest tasks. It is the most common cause of dementia among older adults, accounting for an estimated 60% to 80% of dementia cases. Crucially, Alzheimer's is not a normal part of aging; it results from complex brain changes that begin years, sometimes decades, before symptoms appear.</p></div>
+
+    <p class="proj-back"><a href="projects.html">← Back to Projects</a></p>
+    <div class="proj-body"><div class="paper"><figure class="paper__fig"><img src="assets/img/projects/44c5af26-paper344c00.png" alt="Transformer attention-based neural network for cognitive score estimation from smri data" loading="lazy" data-zoom title="点击查看大图"></figure><div class="paper__body">
+<p class="paper__title">Transformer attention-based neural network for cognitive score estimation from smri data</p>
+<p class="paper__authors">Songheng Li, Yanteng Zhang, Congyu Zou, Lipei Zhang, Fei Li, Qiang Liu</p>
+<p class="paper__venue">Computers in Biology and Medicine, 2025</p>
+<p class="paper__abs">Accurately predicting cognitive scores based on structural MRI holds significant clinical value for understanding the pathological stages of dementia and forecasting Alzheimer’s disease (AD). Some existing deep learning methods often depend on anatomical priors, overlooking individual-specific structural differences during AD progression. To address these limitations, this work proposes a deep neural network that incorporates Transformer attention to jointly predict multiple cognitive scores, including ADAS, CDRSB, and MMSE.</p>
+<p class="paper__links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0010482525009308" target="_blank" rel="noopener">Paper</a></p>
+</div></div></div>
+
+    <footer class="foot">
+      <span>© <span class="js-year">2026</span> Qiang Liu · 保留所有权利</span>
+      <span><a href="index.html">返回主页</a></span>
+    </footer>
+
+  </main>
+</div>
+
+<script src="assets/js/main.js?v=1794729898"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+window.HV_GATE = {"enabled": true, "accounts": [{"account": "liuliu408", "salt": "706a19619dcf6c045ae2e395c6781ae4", "hash": "152b94c5f52f3ecea5377e116ba2e71779579fc117376d4a903aa7e9e622a291"}, {"account": "zhoukai", "salt": "9c1e96f1cc242dc7d4a38544c20d4c94", "hash": "24e06f30d5b3ede112d3a26c81a758a0f5f0af2a29fea26610b021ca5f4e0761"}], "iterations": 150000, "sessionHours": 12};
