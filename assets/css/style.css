@@ -767,6 +767,149 @@ a.card h3 {
   color: var(--text-3);
 }
 
+/* ---------- 硕博论文 ---------- */
+.thesis-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis {
+  padding: 16px 18px 17px;
+  border-radius: var(--radius);
+  background: var(--card);
+  transition: background 0.16s ease;
+}
+
+.thesis + .thesis {
+  margin-top: 10px;
+}
+
+.thesis:hover {
+  background: var(--card-hover);
+}
+
+.thesis[hidden] {
+  display: none;
+}
+
+/* 一条论文压成一行：学位 · 姓名 · 题目 · 毕业时间 · 查看/下载 */
+.thesis__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.thesis__degree {
+  flex: 0 0 auto;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+.thesis__author {
+  flex: 0 0 auto;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.thesis__title {
+  flex: 1 1 260px;
+  min-width: 0;
+  margin: 0;
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.thesis__year {
+  flex: 0 0 auto;
+  margin-left: auto;
+  color: var(--text-3);
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.thesis__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-2);
+}
+
+.thesis__meta em {
+  margin-right: 6px;
+  color: var(--text-3);
+  font-style: normal;
+}
+
+.thesis__acts {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.thesis__btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: var(--accent);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 1.6;
+  transition: background 0.16s ease;
+}
+
+.thesis__btn:hover {
+  background: var(--accent-hover);
+}
+
+.thesis__btn--ghost {
+  background: none;
+  border-color: var(--line);
+  color: var(--text-2);
+}
+
+.thesis__btn--ghost:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.thesis__none {
+  font-size: 12.5px;
+  color: var(--text-3);
+}
+
+@media (max-width: 640px) {
+  .thesis {
+    padding: 14px;
+  }
+  .thesis__meta {
+    gap: 4px 14px;
+    font-size: 12.5px;
+  }
+  .thesis__title {
+    font-size: 14px;
+  }
+}
+
 /* ---------- 论文卡片 ---------- */
 .pub-list {
   display: flex;
@@ -774,14 +917,32 @@ a.card h3 {
 }
 
 .pub {
-  padding: 14px 18px 15px;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 10px 16px 11px;
   border-radius: var(--radius);
   background: var(--card);
   transition: background 0.16s ease;
 }
 
+/* 条目序号：与发明专利页的 01 / 02 样式一致 */
+.pub__idx {
+  flex: none;
+  min-width: 24px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.pub__body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
 .pub + .pub {
-  margin-top: 7px;
+  margin-top: 4px;
 }
 
 .pub:hover {
@@ -789,10 +950,10 @@ a.card h3 {
 }
 
 .pub__title {
-  margin: 0 0 8px;
+  margin: 0 0 3px;
   font-size: 14px;
   font-weight: 600;
-  line-height: 1.55;
+  line-height: 1.5;
   letter-spacing: -0.005em;
 }
 
@@ -807,12 +968,12 @@ a.card h3 {
 }
 
 .pub__authors {
-  margin: 0 0 9px;
+  margin: 2px 0 4px;
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
   font-size: 11px;
-  line-height: 1.5;
+  line-height: 1.45;
   color: var(--text-2);
 }
 
@@ -837,12 +998,13 @@ a.card h3 {
 }
 
 .pub__venue {
-  margin: 0 0 8px;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 6px;
-  font-size: 12.5px;
+  font-size: 12px;
+  line-height: 1.55;
   color: var(--text-2);
 }
 
@@ -850,6 +1012,69 @@ a.card h3 {
   font-style: normal;
   color: var(--text);
   font-weight: 550;
+}
+
+/* 一行里左侧信息（标题或刊物）+ 右侧操作（DOI / 原文 / 引用） */
+.pub__row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 2px 10px;
+}
+
+.pub__row .pub__venue {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.pub__side {
+  flex: 0 0 auto;
+  margin-left: auto;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 4px 10px;
+}
+
+/* 中文期刊：第一行「题目（左）… 刊名, 卷(期): 页码 原文 引用（右）」，第二行作者
+   两行信息量小，整体收紧内边距与行距，避免条目之间出现大片空白 */
+.pub--cn {
+  padding: 8px 16px 9px;
+}
+
+.pub--cn + .pub--cn {
+  margin-top: 3px;
+}
+
+.pub--cn .pub__title {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.pub--cn .pub__cite {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--text-2);
+  overflow-wrap: anywhere;
+}
+
+.pub--cn .pub__row .mini-link {
+  white-space: nowrap;
+}
+
+.pub--cn .pub__authors {
+  margin: 2px 0 0;
+  gap: 3px;
+  line-height: 1.35;
+}
+
+.pub--cn .pub__authors .au {
+  padding: 0 6px;
+  line-height: 1.45;
 }
 
 .pub__meta,
@@ -1421,7 +1646,9 @@ mark.search-hit {
 /* 只显示标题模式：隐藏作者、期刊、链接与标签 */
 body.pubs-titles-only .pub__authors,
 body.pubs-titles-only .pub__venue,
-body.pubs-titles-only .pub__meta {
+body.pubs-titles-only .pub__meta,
+body.pubs-titles-only .pub__row,
+body.pubs-titles-only .pub__idx {
   display: none;
 }
 
