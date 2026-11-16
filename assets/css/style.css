@@ -3544,11 +3544,93 @@ html.zoom-open body {
   line-height: 1.6;
 }
 
-.post__note {
-  margin: 5px 0 0;
+.post__origin {
+  margin-left: 8px;
+  font-size: 11px;
+  font-weight: 400;
+  vertical-align: 1px;
+}
+
+/* 单篇随笔页 */
+.note-single {
+  max-width: 900px;
+}
+
+.note-single .post__note {
+  margin-top: 2px;
+  font-size: 13.5px;
+  line-height: 1.86;
+}
+
+.note-single__links {
+  margin: 0 0 8px;
+}
+
+.note-single__back {
+  margin: 30px 0 0;
   font-size: 12.5px;
-  line-height: 1.75;
+}
+
+.note-single__back a {
+  color: var(--accent);
+}
+
+.note-single__back a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.post__note {
+  margin: 6px 0 0;
+  font-size: 12.5px;
+  line-height: 1.78;
+  color: var(--text-2);
+}
+
+/* 随笔正文：段落 / 小标题 / 编号条目 / 子条目（由 blog_note_html 生成） */
+.post__note > :first-child {
+  margin-top: 0;
+}
+
+.post__note > :last-child {
+  margin-bottom: 0;
+}
+
+.post__p {
+  margin: 0 0 8px;
+}
+
+.post__h {
+  margin: 16px 0 6px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--text-2);
+}
+
+.post__li {
+  margin: 0 0 3px;
+  padding-left: 1.9em;
+  text-indent: -1.9em;
+}
+
+.post__li--sub {
+  padding-left: 3em;
+  text-indent: -1.1em;
   color: var(--text-3);
+}
+
+.post__li--sub::before {
+  content: "○";
+  margin-right: 0.55em;
+  font-size: 0.92em;
+}
+
+.post__note a {
+  color: var(--accent);
+  word-break: break-all;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* ---------- 联系方式 ---------- */
